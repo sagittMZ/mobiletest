@@ -1,18 +1,27 @@
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class MainTest extends CoreTestCase{
+    @Before
+    public void textStartTes(){
+        System.out.println("start test");
+    }
+
+    @After
+    public void textFinishTest() {
+        System.out.println("finish test");
+    }
 
     private int class_number = 20;
     private String class_string = "Hello, world";
 
-    public void typeStartMessage()
-    {
-    super.typeStartMessage();
-    System.out.println("Current class is MainTest");
-    }
+
     @Test
     public void testGetLocalNumber()
     {
+        System.out.println("testGetLocalNumber ");
         int a = this.getLocalNumber();
         if (a==14)
         {
@@ -25,7 +34,9 @@ public class MainTest extends CoreTestCase{
     @Test
     public void testGetClassNumber()
     {
+        System.out.println("testGetClassNumber ");
         class_number = this.getClassNumber();
+
         if (class_number>45)
         {
             System.out.println("The class_number is more than 45");
@@ -37,15 +48,11 @@ public class MainTest extends CoreTestCase{
     @Test
     public void testGetClassString()
     {
+        System.out.println("testGetClassString ");
         class_string = this.getClassString();
         boolean isContain = class_string.toLowerCase().contains("hello");
-        if (isContain)
-        {
-            System.out.println("the string contains \"hello\"");
-        } else
-        {
-            System.out.println("the string doesn't contains \"hello\"");
-        }
+        Assert.assertTrue("the string doesn't contains \"hello\"",isContain);
+
     }
 
     public int getLocalNumber() {
