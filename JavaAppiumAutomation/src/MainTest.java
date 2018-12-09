@@ -1,16 +1,22 @@
 import org.junit.Test;
 
-public class MainTest extends CoreTestCase{
-    MathHelper Math = new MathHelper();
+public class MainTest { //extends CoreTestCase{
+   // MathHelper Math = new MathHelper();
 
     @Test
-    public void myFirstTest()
+    public void testGetLocalNumber()
     {
-     int a = Math.multiply(5);  // call function
-     int b= Math.multiply(5,15);
-        System.out.println(a);
-        System.out.println(b);
-
+     int a = this.getLocalNumber();
+     if (a==14)
+     {
+         System.out.println("The number is 14");
+     } else
+     {
+         System.out.println("The number is  not 14");
+     }
     }
 
+    public int getLocalNumber() {
+        return 14;
+    }
 }

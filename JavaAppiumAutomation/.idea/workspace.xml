@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="" />
+    <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/CoreTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/CoreTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +16,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#420#421#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,17 +37,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MathHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="445">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
+                <element signature="e#681#682#0" expanded="true" />
                 <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,12 +59,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/CoreTestCase.java" />
-        <option value="$PROJECT_DIR$/src/MainTest.java" />
         <option value="$PROJECT_DIR$/src/MathHelper.java" />
+        <option value="$PROJECT_DIR$/src/MainTest.java" />
       </list>
     </option>
   </component>
@@ -69,13 +77,12 @@
     <option name="width" value="1355" />
     <option name="height" value="957" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,6 +103,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -103,7 +112,8 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544134435955" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544368820651" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -117,7 +127,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest.myFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -130,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.myFirstTest" />
       </list>
     </recent_temporary>
@@ -148,18 +167,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_myFirstTest - 2018.12.01 at 14h 27m 52s.xml">
-      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_myFirstTest - 2018.12.06 at 00h 01m 27s.xml">
-      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_myFirstTest - 2018.12.06 at 00h 48m 30s.xml">
-      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_myFirstTest - 2018.12.06 at 00h 50m 49s.xml">
-      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_myFirstTest - 2018.12.06 at 00h 54m 56s.xml">
       <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
     </history-entry>
@@ -178,11 +185,24 @@
     <history-entry file="MainTest_myFirstTest - 2018.12.07 at 00h 01m 26s.xml">
       <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_myFirstTest - 2018.12.09 at 18h 10m 41s.xml">
+      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_myFirstTest - 2018.12.09 at 18h 11m 43s.xml">
+      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.12.09 at 18h 12m 51s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.12.09 at 18h 15m 17s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="2464" y="9" width="1355" height="957" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26640928" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27027026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -191,7 +211,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.020631067" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31917477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,23 +238,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainTest.java">
+    <entry file="file://$PROJECT_DIR$/src/MathHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="445">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MathHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
           </folding>
         </state>
       </provider>
