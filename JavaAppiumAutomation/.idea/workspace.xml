@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="test3_with_assert_testGetClassString">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_client_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_3_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+    <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAppiumAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAppiumAutomation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/CoreTestCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/MainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreTestCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,10 +16,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
                 <element signature="e#1028#1029#0" expanded="true" />
                 <element signature="e#1075#1076#0" expanded="true" />
                 <element signature="e#1111#1112#0" expanded="true" />
@@ -101,7 +93,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544744795579" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544745014087" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -197,16 +189,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544395655182</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ex1_tools_configuration">
+      <created>1544744909325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544744909325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2018.12.09 at 18h 39m 29s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testGetClassString - 2018.12.10 at 00h 38m 58s.xml">
-      <configuration name="MainTest.testGetClassString" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_testGetClassString - 2018.12.10 at 00h 39m 28s.xml">
       <configuration name="MainTest.testGetClassString" configurationId="JUnit" />
     </history-entry>
@@ -231,12 +224,17 @@
     <history-entry file="MainTest - 2018.12.10 at 01h 45m 47s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest - 2018.12.14 at 02h 44m 35s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.14 at 02h 46m 55s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="361" y="138" width="1547" height="957" extended-state="0" />
-    <editor active="true" />
+    <frame x="356" y="53" width="1547" height="957" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09885676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09885676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -245,14 +243,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996139" weight="0.3288835" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31917477" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49899125" weight="0.31917477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003861" side_tool="true" weight="0.3288835" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4988417" weight="0.26213592" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50100875" side_tool="true" weight="0.31917477" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4988417" visible="true" weight="0.26213592" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3288835" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -268,7 +266,8 @@
     <MESSAGE value="test2_getClassNumber" />
     <MESSAGE value="test3_testGetClassString" />
     <MESSAGE value="test3_with_assert_testGetClassString" />
-    <option name="LAST_COMMIT_MESSAGE" value="test3_with_assert_testGetClassString" />
+    <MESSAGE value="ex1_tools_configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex1_tools_configuration" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java" />
@@ -299,10 +298,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
             <element signature="e#1028#1029#0" expanded="true" />
             <element signature="e#1075#1076#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
