@@ -1,9 +1,14 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
 
@@ -21,6 +26,7 @@ public class FirstTest {
         capabilities.setCapability("appActivity",".main.MainActivity");
         capabilities.setCapability("app","c:\\learning\\mobiletest\\JavaAppiumAutomation\\apks\\org.wikipedia.apk"); // full path to apk
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+
     }
     @After
     public void tearDown()
@@ -31,7 +37,40 @@ public class FirstTest {
     @Test
     public void firstTest()
     {
+        WebElement element_to_init_search = driver.findElementByXPath("//*[contains(@text,'Search Wikipedia')]");
+        element_to_init_search.click();
+        WebElement element_to_init_search_line = waitForElementPresentByXpath(
+                "//*[contains(@text,'Search…')]",
+                "can't find search input"
+        );
+
+        element_to_init_search_line.sendKeys("java");
         System.out.println("first test run");
     }
 
+    @Test
+    public void wordExist()
+    {
+        WebElement element_to_init_search = driver.findElementByXPath("//*[contains(@text,'Search Wikipedia')]");
+        element_to_init_search.click();
+        WebElement element_to_init_search_line = waitForElementPresentByXpath(
+                "//*[contains(@text,'Search…')]",
+                "can't find search input"
+        );
+
+        Assert.assertTrue(element_to_init_search_line.isDisplayed());
+    }
+
+    private WebElement waitForElementPresentByXpath(String xpath, String error_messege, long timeoutInSeconds)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
+        wait.withMessage(error_messege+"\n");
+        By by= By.xpath(xpath);
+        return  wait.until(ExpectedConditions.presenceOfElementLocated(by));
+    }
+
+    private WebElement waitForElementPresentByXpath(String xpath, String error_messege)
+    {
+        return  waitForElementPresentByXpath(xpath, error_messege, 5);
+    }
 }
