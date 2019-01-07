@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="ex2_wordExist">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_client_4_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/java_client_4_1_2.xml" afterDir="false" />
+    <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
     </list>
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="60" column="34" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="35" />
+            <state relative-caret-position="295">
+              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,7 +89,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546812175911" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546819511331" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/java-client-4.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -108,21 +107,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.searchCancelingTest">
+  <component name="RunManager" selected="JUnit.FirstTest.searchCancelTest">
     <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="firstTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,6 +121,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="rightApp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.searchCancelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="searchCancelTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.searchCancelTest" />
+        <item itemvalue="JUnit.FirstTest.rightApp" />
+        <item itemvalue="JUnit.FirstTest.wordExist" />
         <item itemvalue="JUnit.FirstTest.searchCancelingTest" />
         <item itemvalue="JUnit.FirstTest" />
-        <item itemvalue="JUnit.FirstTest.rightApp" />
-        <item itemvalue="JUnit.FirstTest.firstTest" />
-        <item itemvalue="JUnit.FirstTest.wordExist" />
       </list>
     </recent_temporary>
   </component>
@@ -227,22 +226,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545607756831</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ex3_searchCancelTest">
+      <created>1546812202652</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546812202652</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ex3_searchCancelTest">
+      <created>1546812279438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546812279438</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_rightApp - 2019.01.06 at 20h 35m 48s.xml">
-      <configuration name="FirstTest.rightApp" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.06 at 22h 24m 44s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 06m 17s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 09m 39s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 12m 44s.xml">
       <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
     </history-entry>
@@ -260,6 +261,18 @@
     </history-entry>
     <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 28m 25s.xml">
       <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_searchCancelTest - 2019.01.07 at 01h 34m 14s.xml">
+      <configuration name="FirstTest.searchCancelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_wordExist - 2019.01.07 at 01h 36m 07s.xml">
+      <configuration name="FirstTest.wordExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_rightApp - 2019.01.07 at 01h 36m 58s.xml">
+      <configuration name="FirstTest.rightApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_searchCancelTest - 2019.01.07 at 03h 04m 08s.xml">
+      <configuration name="FirstTest.searchCancelTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -282,7 +295,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.26652452" side_tool="true" weight="0.37811485" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4988417" weight="0.14730878" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4988417" weight="0.08073654" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3288835" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -300,7 +313,8 @@
     <MESSAGE value="test3_with_assert_testGetClassString" />
     <MESSAGE value="ex1_tools_configuration" />
     <MESSAGE value="ex2_wordExist" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex2_wordExist" />
+    <MESSAGE value="ex3_searchCancelTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex3_searchCancelTest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java" />
@@ -315,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="60" column="34" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="35" />
+        <state relative-caret-position="295">
+          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
