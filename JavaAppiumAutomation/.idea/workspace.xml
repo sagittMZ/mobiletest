@@ -17,10 +17,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            <state relative-caret-position="155">
+              <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1388#1389#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="method#rightApp#0;class#FirstTest#0" />
+                <element signature="method#searchCancelTest#0;class#FirstTest#0" />
+                <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+                <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
+                <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
+                <element signature="method#wordExist#0;class#FirstTest#0" />
+                <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
+                <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
+                <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
+                <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
+                <element signature="method#startSearchingArticles#0;class#FirstTest#0" />
+                <element signature="method#waitForElementAndDblClick#0;class#FirstTest#0" />
+                <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
+                <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
+                <element signature="method#swipeUp#0;class#FirstTest#0" />
+                <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
+                <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
               </folding>
             </state>
           </provider>
@@ -48,11 +67,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="130" />
-    <option name="y" value="-24" />
-    <option name="width" value="1345" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-20" />
+    <option name="width" value="1833" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -89,7 +107,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546819511331" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546981730327" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/java-client-4.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -107,50 +125,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.searchCancelTest">
-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FirstTest.saveCoupleArticleToMyListAndDeleteOne">
+    <configuration name="FirstTest.checkMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.rightApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="rightApp" />
+      <option name="METHOD_NAME" value="checkMethods" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.searchCancelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="searchCancelTest" />
+      <option name="METHOD_NAME" value="saveCoupleArticleToMyListAndDeleteOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.searchCancelingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.saveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="searchCancelingTest" />
+      <option name="METHOD_NAME" value="saveFirstArticleToMyList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.wordExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.tempForCheckMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="wordExist" />
+      <option name="METHOD_NAME" value="tempForCheckMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testSwipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testSwipeArticle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest.searchCancelTest" />
-        <item itemvalue="JUnit.FirstTest.rightApp" />
-        <item itemvalue="JUnit.FirstTest.wordExist" />
-        <item itemvalue="JUnit.FirstTest.searchCancelingTest" />
-        <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.FirstTest.saveCoupleArticleToMyListAndDeleteOne" />
+        <item itemvalue="JUnit.FirstTest.tempForCheckMethods" />
+        <item itemvalue="JUnit.FirstTest.checkMethods" />
+        <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
+        <item itemvalue="JUnit.FirstTest.testSwipeArticle" />
       </list>
     </recent_temporary>
   </component>
@@ -240,46 +260,62 @@
       <option name="project" value="LOCAL" />
       <updated>1546812279438</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ex3_searchCancelTest_withClear">
+      <created>1546819695461</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546819695461</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 12m 44s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 14m 44s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2019.01.07 at 00h 14m 48s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 20m 34s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 17m 55s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_tempForCheckMethods - 2019.01.08 at 23h 31m 05s.xml">
+      <configuration name="FirstTest.tempForCheckMethods" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 23m 18s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 39m 16s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 26m 06s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 43m 51s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_searchCancelingTest - 2019.01.07 at 00h 28m 25s.xml">
-      <configuration name="FirstTest.searchCancelingTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 54m 37s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_searchCancelTest - 2019.01.07 at 01h 34m 14s.xml">
-      <configuration name="FirstTest.searchCancelTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 56m 15s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_wordExist - 2019.01.07 at 01h 36m 07s.xml">
-      <configuration name="FirstTest.wordExist" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 59m 23s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_rightApp - 2019.01.07 at 01h 36m 58s.xml">
-      <configuration name="FirstTest.rightApp" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.09 at 00h 02m 37s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_searchCancelTest - 2019.01.07 at 03h 04m 08s.xml">
-      <configuration name="FirstTest.searchCancelTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.09 at 00h 07m 06s.xml">
+      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-16" y="0" width="1466" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16145092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,8 +324,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996139" weight="0.3288835" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.32152975" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39971346" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.2657143" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39857143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -314,7 +350,8 @@
     <MESSAGE value="ex1_tools_configuration" />
     <MESSAGE value="ex2_wordExist" />
     <MESSAGE value="ex3_searchCancelTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex3_searchCancelTest" />
+    <MESSAGE value="ex3_searchCancelTest_withClear" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex3_searchCancelTest_withClear" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java" />
@@ -327,12 +364,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="155">
+          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="method#rightApp#0;class#FirstTest#0" />
+            <element signature="method#searchCancelTest#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
+            <element signature="method#wordExist#0;class#FirstTest#0" />
+            <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
+            <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
+            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
+            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
+            <element signature="method#startSearchingArticles#0;class#FirstTest#0" />
+            <element signature="method#waitForElementAndDblClick#0;class#FirstTest#0" />
+            <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
+            <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
+            <element signature="method#swipeUp#0;class#FirstTest#0" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
+            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
