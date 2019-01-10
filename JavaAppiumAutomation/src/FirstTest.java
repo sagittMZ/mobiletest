@@ -13,6 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class FirstTest {
     private AppiumDriver driver;
@@ -164,9 +167,9 @@ public class FirstTest {
         String article_name1 ="Java (programming language)";
         String search_word="Java";
         String name_of_folder ="Learning programming";
-        startSearchingArticles(article_name1, search_word);
+        startSearchingArticleAndGoTo(article_name1, search_word);
         firstSavingArticle(name_of_folder);
-        startSearchingArticles("Java version history", search_word);
+        startSearchingArticleAndGoTo("Java version history", search_word);
         anotherSavingArticles(name_of_folder);
         goToMyList();
         selectTheFolder(name_of_folder);
@@ -178,18 +181,12 @@ public class FirstTest {
         );
 
     }
-//проверка методов по отдельности
     @Test
-    public void tempForCheckMethods()
+    public void assertElementPresent()
     {
-//        String article_name1 ="Object-oriented programming language";  By.xpath("//*[@text='Java (programming language)']"),
-        String article_name1 ="Java (programming language)";
-        String search_word="Java";
-        String name_of_folder ="Learning programming";
-        startSearchingArticles(article_name1, search_word);
-        firstSavingArticle(name_of_folder);
-        startSearchingArticles("Java version history", search_word);
-        anotherSavingArticles(name_of_folder);
+        String article_name ="Khinkali";
+        String search_phrase="Khinkali";
+        articleSearchAndGoToWithoutWaitTitle(article_name, search_phrase);
     }
 
     @Test
@@ -319,6 +316,41 @@ public class FirstTest {
     }
 
     @Test
+    public void testAmountOfNotEmptySearch()
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                "can't find search input",
+                5
+        );
+
+        //org.wikipedia:id/search_results_list - локатор общего контейнера с результатами поиска
+        //org.wikipedia:id/page_list_item_container - локатор элемента в общем контейнере
+        String search_phrase= "Linkin Park Discography";
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text,'Search…')]"),
+                search_phrase,
+                "can't find search input",
+                5
+        );
+        // в данном случае /* спуск к дочернему элементу
+        String search_result_locator = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
+        waitForElementPresent(
+                By.xpath(search_result_locator),
+                "can't find anything by the request "+ search_phrase,
+                15
+        );
+        int amountOfSearchResults= getAmountOfElement(
+                By.xpath(search_result_locator)
+        );
+        System.out.println(amountOfSearchResults);
+        Assert.assertTrue(
+                "there are few search results",
+                amountOfSearchResults >0
+        );
+    }
+
+    @Test
     public void wordExist()
     {
         WebElement element_to_init_search = driver.findElementByXPath("//*[contains(@text,'Search Wikipedia')]");
@@ -336,7 +368,7 @@ public class FirstTest {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message+"\n");
        // By by= By.xpath(xpath);
-        return  wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        return  wait.until(presenceOfElementLocated(by));
     }
 
     private WebElement waitForElementPresent(By by, String error_message)
@@ -358,7 +390,7 @@ public class FirstTest {
     }
 
 
-    private void startSearchingArticles(String article_name, String search_word)
+    private void startSearchingArticleAndGoTo(String article_name, String search_word)
     {
         waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
@@ -385,6 +417,30 @@ public class FirstTest {
         );
 
 
+    }
+
+    private void articleSearchAndGoToWithoutWaitTitle(String article_name, String search_word)
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                "can't find search input",
+                5
+        );
+        //search_word="Java"
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text,'Search…')]"),
+                search_word,
+                "can't find search input",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[contains(@text,'"+article_name+"')]"),
+                "can't find right article",
+                5
+        );
+
+        Assert.assertNotNull("cant find title of article",presenceOfElementLocated(By.id("org.wikipedia:id/view_page_title_text")));
     }
 
     private void firstSavingArticle(String name_of_folder)
@@ -573,5 +629,11 @@ public class FirstTest {
                 .moveTo(x_left, y_midle)
                 .release()
                 .perform();
+    }
+
+    private int getAmountOfElement(By by)
+    {
+        List elements = driver.findElements(by);
+        return elements.size();
     }
 }

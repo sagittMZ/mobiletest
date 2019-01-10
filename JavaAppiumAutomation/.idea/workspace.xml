@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="56" />
+            <state relative-caret-position="443">
+              <caret line="537" column="5" lean-forward="true" selection-start-line="537" selection-start-column="5" selection-end-line="537" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1388#1389#0" expanded="true" />
@@ -27,19 +27,28 @@
                 <element signature="method#searchCancelTest#0;class#FirstTest#0" />
                 <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
                 <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
+                <element signature="method#saveCoupleArticleToMyListAndDeleteOne#0;class#FirstTest#0" />
+                <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
                 <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
+                <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
                 <element signature="method#wordExist#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
                 <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
                 <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
                 <element signature="method#startSearchingArticles#0;class#FirstTest#0" />
+                <element signature="method#firstSavingArticle#0;class#FirstTest#0" />
+                <element signature="method#anotherSavingArticles#0;class#FirstTest#0" />
+                <element signature="method#goToMyList#0;class#FirstTest#0" />
+                <element signature="method#selectTheFolder#0;class#FirstTest#0" />
+                <element signature="method#deleteArticleByLeftSwipe#0;class#FirstTest#0" />
                 <element signature="method#waitForElementAndDblClick#0;class#FirstTest#0" />
                 <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
                 <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
                 <element signature="method#swipeUp#0;class#FirstTest#0" />
                 <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
                 <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+                <element signature="method#getAmountOfElement#0;class#FirstTest#0" />
               </folding>
             </state>
           </provider>
@@ -53,6 +62,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>condi</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -69,7 +83,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-20" />
-    <option name="width" value="1833" />
+    <option name="width" value="1835" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,7 +113,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -107,7 +121,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546981730327" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547158617554" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/java-client-4.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -125,7 +139,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveCoupleArticleToMyListAndDeleteOne">
+  <component name="RunManager" selected="JUnit.FirstTest.assertElementPresent">
+    <configuration name="FirstTest.assertElementPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="assertElementPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FirstTest.checkMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -146,16 +170,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.saveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="saveFirstArticleToMyList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FirstTest.tempForCheckMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -166,11 +180,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testSwipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSwipeArticle" />
+      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.assertElementPresent" />
+        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
         <item itemvalue="JUnit.FirstTest.saveCoupleArticleToMyListAndDeleteOne" />
         <item itemvalue="JUnit.FirstTest.tempForCheckMethods" />
         <item itemvalue="JUnit.FirstTest.checkMethods" />
-        <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
-        <item itemvalue="JUnit.FirstTest.testSwipeArticle" />
       </list>
     </recent_temporary>
   </component>
@@ -267,25 +281,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546819695461</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ex5_saveCoupleArticleToMyListAndDeleteOne_aaargghhh">
+      <created>1546981822875</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546981822876</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 14m 44s.xml">
-      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 20m 34s.xml">
-      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_tempForCheckMethods - 2019.01.08 at 23h 31m 05s.xml">
-      <configuration name="FirstTest.tempForCheckMethods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 39m 16s.xml">
-      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 43m 51s.xml">
-      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.08 at 23h 54m 37s.xml">
       <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
@@ -301,6 +307,21 @@
     <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.09 at 00h 07m 06s.xml">
       <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2019.01.11 at 00h 16m 28s.xml">
+      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2019.01.11 at 00h 18m 01s.xml">
+      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_assertElementPresent - 2019.01.11 at 00h 40m 09s.xml">
+      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_assertElementPresent - 2019.01.11 at 01h 02m 53s.xml">
+      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_assertElementPresent - 2019.01.11 at 01h 15m 27s.xml">
+      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,10 +333,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="0" width="1466" height="832" extended-state="0" />
+    <frame x="-16" y="0" width="1468" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16145092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16548295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -324,7 +345,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996139" weight="0.3288835" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.2657143" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.20571429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39857143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,7 +353,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.26652452" side_tool="true" weight="0.37811485" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4988417" weight="0.08073654" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3288835" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -351,7 +372,8 @@
     <MESSAGE value="ex2_wordExist" />
     <MESSAGE value="ex3_searchCancelTest" />
     <MESSAGE value="ex3_searchCancelTest_withClear" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex3_searchCancelTest_withClear" />
+    <MESSAGE value="ex5_saveCoupleArticleToMyListAndDeleteOne_aaargghhh" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex5_saveCoupleArticleToMyListAndDeleteOne_aaargghhh" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java" />
@@ -371,10 +393,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="56" />
+        <state relative-caret-position="443">
+          <caret line="537" column="5" lean-forward="true" selection-start-line="537" selection-start-column="5" selection-end-line="537" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1388#1389#0" expanded="true" />
@@ -383,19 +412,28 @@
             <element signature="method#searchCancelTest#0;class#FirstTest#0" />
             <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
             <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
+            <element signature="method#saveCoupleArticleToMyListAndDeleteOne#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
+            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
             <element signature="method#wordExist#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#startSearchingArticles#0;class#FirstTest#0" />
+            <element signature="method#firstSavingArticle#0;class#FirstTest#0" />
+            <element signature="method#anotherSavingArticles#0;class#FirstTest#0" />
+            <element signature="method#goToMyList#0;class#FirstTest#0" />
+            <element signature="method#selectTheFolder#0;class#FirstTest#0" />
+            <element signature="method#deleteArticleByLeftSwipe#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndDblClick#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
             <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
             <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="method#getAmountOfElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
