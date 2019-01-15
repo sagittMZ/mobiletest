@@ -10,6 +10,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -186,8 +187,12 @@ public class FirstTest {
         String article_name = "Khinkali";
         String search_phrase = "Khinkali";
         articleSearchAndGoToWithoutWaitTitle(article_name, search_phrase);
+        presenceOfElementLocatedBy(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "cant find title of article"
+        );
     }
-
+    //Assert.assertNotNull("cant find title of article", presenceOfElementLocated(By.id("org.wikipedia:id/view_page_title_text")));
     @Test
     public void saveFirstArticleToMyList() {
         //start search
@@ -499,7 +504,7 @@ public class FirstTest {
                 5
         );
 
-        Assert.assertNotNull("cant find title of article", presenceOfElementLocated(By.id("org.wikipedia:id/view_page_title_text")));
+        //Assert.assertNotNull("cant find title of article", presenceOfElementLocated(By.id("org.wikipedia:id/view_page_title_text")));
     }
 
     private void assertElementNotPresent(By by, String error_message) {
@@ -621,6 +626,11 @@ public class FirstTest {
         element.click();
         element.click();
         return element;
+    }
+    private void presenceOfElementLocatedBy(By by, String error_message)
+    {
+        Assert.assertNotNull(error_message, presenceOfElementLocated(by));
+        return;
     }
 
     private boolean waitForElementNotPresent(By by, String error_message, long timeoutInSeconds) {
