@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+            <state relative-caret-position="340">
+              <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#rightApp#0;class#FirstTest#0" />
@@ -26,12 +26,12 @@
                 <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
                 <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
                 <element signature="method#saveCoupleArticleToMyListAndDeleteOne#0;class#FirstTest#0" />
+                <element signature="method#assertElementPresent#0;class#FirstTest#0" />
                 <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
                 <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
                 <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
                 <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
                 <element signature="method#wordExist#0;class#FirstTest#0" />
-                <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
                 <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -122,7 +122,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547585175788" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547585283198" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/java-client-4.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -303,13 +303,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547347670967</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ex6_assertElementPresent_v.2">
+      <created>1547585267039</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1547585267039</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_saveCoupleArticleToMyListAndDeleteOne - 2019.01.09 at 00h 07m 06s.xml">
-      <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2019.01.11 at 00h 16m 28s.xml">
       <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
     </history-entry>
@@ -337,6 +341,9 @@
     <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.13 at 05h 31m 48s.xml">
       <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest_assertElementPresent - 2019.01.15 at 23h 46m 50s.xml">
+      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,7 +367,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996139" weight="0.3288835" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7334755" weight="0.20571429" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.20571429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39857143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,7 +397,8 @@
     <MESSAGE value="ex5_saveCoupleArticleToMyListAndDeleteOne_aaargghhh" />
     <MESSAGE value="ex6_assertElementPresent" />
     <MESSAGE value="ex7_testChangeScreenOrientationOnSearchResults" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex7_testChangeScreenOrientationOnSearchResults" />
+    <MESSAGE value="ex6_assertElementPresent_v.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex6_assertElementPresent_v.2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java" />
@@ -419,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+        <state relative-caret-position="340">
+          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#rightApp#0;class#FirstTest#0" />
@@ -428,12 +436,12 @@
             <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
             <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#saveCoupleArticleToMyListAndDeleteOne#0;class#FirstTest#0" />
+            <element signature="method#assertElementPresent#0;class#FirstTest#0" />
             <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
             <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#wordExist#0;class#FirstTest#0" />
-            <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
