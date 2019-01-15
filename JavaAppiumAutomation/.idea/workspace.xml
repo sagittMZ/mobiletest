@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92250a86-058c-46ae-b050-412a76239ff9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchingTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,41 +19,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+        <entry file="file://$PROJECT_DIR$/src/SearchingTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+            <state relative-caret-position="169">
+              <caret line="142" column="39" lean-forward="true" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#rightApp#0;class#FirstTest#0" />
                 <element signature="method#searchCancelTest#0;class#FirstTest#0" />
                 <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
                 <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
-                <element signature="method#saveCoupleArticleToMyListAndDeleteOne#0;class#FirstTest#0" />
                 <element signature="method#assertElementPresent#0;class#FirstTest#0" />
                 <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
                 <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
                 <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
                 <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
                 <element signature="method#wordExist#0;class#FirstTest#0" />
-                <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
-                <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-                <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-                <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
-                <element signature="method#startSearchingArticleAndGoTo#0;class#FirstTest#0" />
-                <element signature="method#articleSearchAndGoToWithoutWaitTitle#0;class#FirstTest#0" />
-                <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
-                <element signature="method#firstSavingArticle#0;class#FirstTest#0" />
-                <element signature="method#anotherSavingArticles#0;class#FirstTest#0" />
-                <element signature="method#goToMyList#0;class#FirstTest#0" />
-                <element signature="method#selectTheFolder#0;class#FirstTest#0" />
-                <element signature="method#deleteArticleByLeftSwipe#0;class#FirstTest#0" />
-                <element signature="method#waitForElementAndDblClick#0;class#FirstTest#0" />
-                <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
-                <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-                <element signature="method#swipeUp#0;class#FirstTest#0" />
-                <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
-                <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+                <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="294" column="1" lean-forward="true" selection-start-line="294" selection-start-column="1" selection-end-line="294" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#212#213#0" expanded="true" />
+                <element signature="method#waitForElementPresent#0;class#MainPageObject#0" />
+                <element signature="method#waitForElementPresent#1;class#MainPageObject#0" />
+                <element signature="method#waitForElementAndClick#0;class#MainPageObject#0" />
+                <element signature="method#waitForElementAndSendKeys#0;class#MainPageObject#0" />
+                <element signature="method#startSearchingArticleAndGoTo#0;class#MainPageObject#0" />
+                <element signature="method#articleSearchAndGoToWithoutWaitTitle#0;class#MainPageObject#0" />
+                <element signature="method#assertElementNotPresent#0;class#MainPageObject#0" />
+                <element signature="method#firstSavingArticle#0;class#MainPageObject#0" />
+                <element signature="method#anotherSavingArticles#0;class#MainPageObject#0" />
+                <element signature="method#goToMyList#0;class#MainPageObject#0" />
+                <element signature="method#selectTheFolder#0;class#MainPageObject#0" />
+                <element signature="method#deleteArticleByLeftSwipe#0;class#MainPageObject#0" />
+                <element signature="method#waitForElementAndDblClick#0;class#MainPageObject#0" />
+                <element signature="method#presenceOfElementLocatedBy#0;class#MainPageObject#0" />
+                <element signature="method#waitForElementNotPresent#0;class#MainPageObject#0" />
+                <element signature="method#waitForElementAndClear#0;class#MainPageObject#0" />
+                <element signature="method#swipeUp#0;class#MainPageObject#0" />
+                <element signature="method#swipeUpToFindElement#0;class#MainPageObject#0" />
+                <element signature="method#swipeElementToLeft#0;class#MainPageObject#0" />
+                <element signature="method#getAmountOfElement#0;class#MainPageObject#0" />
+                <element signature="method#waitForElementAndGetAttribute#0;class#MainPageObject#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,12 +125,17 @@
         <option value="$PROJECT_DIR$/src/CoreTestCase.java" />
         <option value="$PROJECT_DIR$/src/MainTest.java" />
         <option value="$PROJECT_DIR$/src/FirstTest.java" />
+        <option value="$PROJECT_DIR$/src/testSearch.java" />
+        <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" />
+        <option value="$PROJECT_DIR$/src/SearchingTests.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-20" />
-    <option name="width" value="1835" />
+    <option name="x" value="16" />
+    <option name="width" value="1313" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -107,6 +158,19 @@
             </path>
             <path>
               <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -122,7 +186,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547585283198" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547592306198" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/java-client-4.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -140,52 +204,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.assertElementPresent">
-    <configuration name="FirstTest.assertElementPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SearchingTests,testSaveFirstArticleToMyList and 1 more">
+    <configuration name="SearchingTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="MAIN_CLASS_NAME" value="SearchingTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchingTests.assertElementPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchingTests" />
       <option name="METHOD_NAME" value="assertElementPresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.saveCoupleArticleToMyListAndDeleteOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchingTests.testSaveCoupleArticleToMyListAndDeleteOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="saveCoupleArticleToMyListAndDeleteOne" />
+      <option name="MAIN_CLASS_NAME" value="SearchingTests" />
+      <option name="METHOD_NAME" value="testSaveCoupleArticleToMyListAndDeleteOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testAmountOfEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchingTests,testSaveFirstArticleToMyList and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="SearchingTests" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="SearchingTests,testSaveFirstArticleToMyList" />
+        <pattern testClass="SearchingTests,testSaveCoupleArticleToMyListAndDeleteOne" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchingTests.testSaveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testChangeScreenOrientationOnSearchResults" />
+      <option name="MAIN_CLASS_NAME" value="SearchingTests" />
+      <option name="METHOD_NAME" value="testSaveFirstArticleToMyList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest.assertElementPresent" />
-        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
-        <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.saveCoupleArticleToMyListAndDeleteOne" />
+        <item itemvalue="JUnit.SearchingTests,testSaveFirstArticleToMyList and 1 more" />
+        <item itemvalue="JUnit.SearchingTests" />
+        <item itemvalue="JUnit.SearchingTests.testSaveCoupleArticleToMyListAndDeleteOne" />
+        <item itemvalue="JUnit.SearchingTests.testSaveFirstArticleToMyList" />
+        <item itemvalue="JUnit.SearchingTests.assertElementPresent" />
       </list>
     </recent_temporary>
   </component>
@@ -310,28 +375,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547585267039</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ex7_rotation_changed_v.2">
+      <created>1547585594436</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1547585594436</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2019.01.11 at 00h 16m 28s.xml">
-      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2019.01.11 at 00h 18m 01s.xml">
-      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_assertElementPresent - 2019.01.11 at 00h 40m 09s.xml">
-      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_assertElementPresent - 2019.01.11 at 01h 02m 53s.xml">
-      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_assertElementPresent - 2019.01.11 at 01h 15m 27s.xml">
-      <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testAmountOfEmptySearch - 2019.01.11 at 01h 47m 28s.xml">
-      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_testAmountOfEmptySearch - 2019.01.13 at 04h 47m 05s.xml">
       <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
     </history-entry>
@@ -344,6 +398,24 @@
     <history-entry file="FirstTest_assertElementPresent - 2019.01.15 at 23h 46m 50s.xml">
       <configuration name="FirstTest.assertElementPresent" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SearchingTests - 2019.01.16 at 00h 39m 45s.xml">
+      <configuration name="SearchingTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchingTests_testSaveFirstArticleToMyList - 2019.01.16 at 00h 44m 35s.xml">
+      <configuration name="SearchingTests.testSaveFirstArticleToMyList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchingTests_testSaveCoupleArticleToMyListAndDeleteOne - 2019.01.16 at 00h 47m 49s.xml">
+      <configuration name="SearchingTests.testSaveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchingTests_testSaveCoupleArticleToMyListAndDeleteOne - 2019.01.16 at 00h 51m 59s.xml">
+      <configuration name="SearchingTests.testSaveCoupleArticleToMyListAndDeleteOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchingTests - 2019.01.16 at 01h 30m 28s.xml">
+      <configuration name="SearchingTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchingTests,testSaveFirstArticleToMyList_and_1_more - 2019.01.16 at 01h 36m 31s.xml">
+      <configuration name="SearchingTests,testSaveFirstArticleToMyList and 1 more" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,10 +427,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="0" width="1468" height="832" extended-state="0" />
-    <editor active="true" />
+    <frame x="13" y="0" width="1050" height="832" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16974431" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24141414" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -367,7 +438,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996139" weight="0.3288835" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.20571429" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7334755" visible="true" weight="0.48714286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39857143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,7 +469,20 @@
     <MESSAGE value="ex6_assertElementPresent" />
     <MESSAGE value="ex7_testChangeScreenOrientationOnSearchResults" />
     <MESSAGE value="ex6_assertElementPresent_v.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex6_assertElementPresent_v.2" />
+    <MESSAGE value="ex7_rotation_changed_v.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex7_rotation_changed_v.2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SearchingTests.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java" />
@@ -425,41 +509,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state relative-caret-position="375">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="294" column="1" lean-forward="true" selection-start-line="294" selection-start-column="1" selection-end-line="294" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="method#waitForElementPresent#0;class#MainPageObject#0" />
+            <element signature="method#waitForElementPresent#1;class#MainPageObject#0" />
+            <element signature="method#waitForElementAndClick#0;class#MainPageObject#0" />
+            <element signature="method#waitForElementAndSendKeys#0;class#MainPageObject#0" />
+            <element signature="method#startSearchingArticleAndGoTo#0;class#MainPageObject#0" />
+            <element signature="method#articleSearchAndGoToWithoutWaitTitle#0;class#MainPageObject#0" />
+            <element signature="method#assertElementNotPresent#0;class#MainPageObject#0" />
+            <element signature="method#firstSavingArticle#0;class#MainPageObject#0" />
+            <element signature="method#anotherSavingArticles#0;class#MainPageObject#0" />
+            <element signature="method#goToMyList#0;class#MainPageObject#0" />
+            <element signature="method#selectTheFolder#0;class#MainPageObject#0" />
+            <element signature="method#deleteArticleByLeftSwipe#0;class#MainPageObject#0" />
+            <element signature="method#waitForElementAndDblClick#0;class#MainPageObject#0" />
+            <element signature="method#presenceOfElementLocatedBy#0;class#MainPageObject#0" />
+            <element signature="method#waitForElementNotPresent#0;class#MainPageObject#0" />
+            <element signature="method#waitForElementAndClear#0;class#MainPageObject#0" />
+            <element signature="method#swipeUp#0;class#MainPageObject#0" />
+            <element signature="method#swipeUpToFindElement#0;class#MainPageObject#0" />
+            <element signature="method#swipeElementToLeft#0;class#MainPageObject#0" />
+            <element signature="method#getAmountOfElement#0;class#MainPageObject#0" />
+            <element signature="method#waitForElementAndGetAttribute#0;class#MainPageObject#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SearchingTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="142" column="39" lean-forward="true" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#rightApp#0;class#FirstTest#0" />
             <element signature="method#searchCancelTest#0;class#FirstTest#0" />
             <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
             <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
-            <element signature="method#saveCoupleArticleToMyListAndDeleteOne#0;class#FirstTest#0" />
             <element signature="method#assertElementPresent#0;class#FirstTest#0" />
             <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#testSwipeToArticleElement#0;class#FirstTest#0" />
             <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#wordExist#0;class#FirstTest#0" />
-            <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
-            <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
-            <element signature="method#startSearchingArticleAndGoTo#0;class#FirstTest#0" />
-            <element signature="method#articleSearchAndGoToWithoutWaitTitle#0;class#FirstTest#0" />
-            <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
-            <element signature="method#firstSavingArticle#0;class#FirstTest#0" />
-            <element signature="method#anotherSavingArticles#0;class#FirstTest#0" />
-            <element signature="method#goToMyList#0;class#FirstTest#0" />
-            <element signature="method#selectTheFolder#0;class#FirstTest#0" />
-            <element signature="method#deleteArticleByLeftSwipe#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndDblClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
