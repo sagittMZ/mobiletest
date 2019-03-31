@@ -184,6 +184,7 @@ public class MainPageObject {
     public void selectTheFolder(String name_of_folder) {
         waitForElementAndClick(
                 //  By.xpath("//org.wikipedia:id/item_title[@text='Learning programming']"),
+
                 By.xpath("//*[@text='" + name_of_folder + "']"), // добавляем переменную используя конкатенацию, чтоб не слился xpath "+ %var_name% +"
                 "can't find the 'Learning programming' folder",
                 15
