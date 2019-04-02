@@ -1,7 +1,5 @@
 import lib.CoreTestCase;
-import lib.ui.ArticlePageObject;
-import lib.ui.MainPageObject;
-import lib.ui.SearchPageObject;
+import lib.ui.*;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -113,82 +111,22 @@ public class SearchingTests extends CoreTestCase {
 
     @Test
     public void testSaveFirstArticleToMyList() {
-        //start search
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
-        mainPageObject.waitForElementPresent(
-                By.id("org.wikipedia:id/view_page_title_text"),
-                "can't find article title",
-                15
-        );
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
-                "can't find 'more options button",
-                5
-        );
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//*[@text='Add to reading list']"),
-                "can't find option to adding article to reading list",
-                5
-        );
-        mainPageObject.waitForElementAndClick(
-                By.id("org.wikipedia:id/onboarding_button"),
-                "can't find 'GOT IT' tip overlay",
-                5
-        );
-
-        mainPageObject.waitForElementAndClear(
-                By.id("org.wikipedia:id/text_input"),
-                "cant find input to set name of articles folder",
-                5
-        );
-
+        SearchPageObject.clickOnArticleWithSubstring("Object-oriented programming language");
+        SearchPageObject.findArticleTitle();
+        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
+        ArticlePageObject.waitForTitleElement();
+        String article_title = ArticlePageObject.getArticleTitle();
         String name_of_folder = "Learning programming";
-        mainPageObject.waitForElementAndSendKeys(
-                By.id("org.wikipedia:id/text_input"),
-                name_of_folder,
-                "cant put text to set name of articles folder",
-                5
-        );
-
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//*[@text='OK']"),
-                "can't press to 'OK' button",
-                5
-        );
-
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "can't find the 'X' button, cant close article",
-                5
-        );
-
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
-                "can't find the navigation button to 'My list' option",
-                5
-        );
-
-        mainPageObject.waitForElementAndClick(
-                //  By.xpath("//org.wikipedia:id/item_title[@text='Learning programming']"),
-                By.xpath("//*[@text='" + name_of_folder + "']"), // добавляем переменную используя конкатенацию, чтоб не слился xpath "+ %var_name% +"
-                "can't find the 'Learning programming' folder",
-                15
-        );
-
-        mainPageObject.swipeElementToLeft(
-                By.xpath("//*[@text='Java (programming language)']"),
-                "can't find saved article"
-        );
-
-        mainPageObject.waitForElementNotPresent(
-                By.xpath("//*[@text='Java (programming language)']"),
-                "can't delete saved article",
-                5
-        );
-
+        ArticlePageObject.addArticleToMyList(name_of_folder);
+        ArticlePageObject.closeArticle();
+        NavigationUI NavigationUI = new NavigationUI(driver);
+        NavigationUI.clickMyList();
+        MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
+        MyListsPageObject.openFolderByName(name_of_folder);
+        MyListsPageObject.swipeByArticleToDelete(article_title);
     }
 
     @Test
