@@ -1,4 +1,5 @@
 import lib.CoreTestCase;
+import lib.ui.ArticlePageObject;
 import lib.ui.MainPageObject;
 import lib.ui.SearchPageObject;
 import org.junit.Assert;
@@ -47,15 +48,11 @@ public class SearchingTests extends CoreTestCase {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
+        SearchPageObject.clickOnArticleWithSubstring("Object-oriented programming language");
         SearchPageObject.findArticleTitle();
+        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
+        String article_title = ArticlePageObject.getArticleTitle();
 
-        WebElement article_title_element = mainPageObject.waitForElementPresent(
-                By.id("org.wikipedia:id/view_page_title_text"),
-                "can't find article title",
-                15
-        );
-        String article_title = article_title_element.getAttribute("text");
         Assert.assertEquals(
                 "unexpected title",
                 "Java (programming language)",
@@ -67,8 +64,11 @@ public class SearchingTests extends CoreTestCase {
     public void testSwipeArticle() {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
         SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
+        SearchPageObject.typeSearchLine("Appium");
+        SearchPageObject.clickOnArticleWithSubstring("Appium");
+        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
+        ArticlePageObject.waitForTitleElement();
+
         mainPageObject.waitForElementPresent(
                 By.id("org.wikipedia:id/view_page_title_text"),
                 "can't find article title",
@@ -193,35 +193,15 @@ public class SearchingTests extends CoreTestCase {
 
     @Test
     public void testSwipeToArticleElement() {
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "can't find search input",
-                5
-        );
-        mainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                "Appium",
-                "can't find search input",
-                5
-        );
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Appium']"),
-                "can't find search input",
-                5
-        );
-        mainPageObject.waitForElementPresent(
-                By.id("org.wikipedia:id/view_page_title_text"),
-                "can't find article title",
-                15
-        );
-
-        mainPageObject.swipeUpToFindElement(
-                By.xpath("//*[@text='View page in browser']"),
-                "cant find the end of the article",
-                25
-        );
-
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject.initSearchInput();
+        SearchPageObject.typeSearchLine("Appium");
+        SearchPageObject.clickOnArticleWithSubstring("Appium");
+        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
+        ArticlePageObject.waitForTitleElement();
+        ArticlePageObject.swipeToFooter();
     }
+
 
     @Test
     public void testAmountOfNotEmptySearch() {
