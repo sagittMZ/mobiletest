@@ -13,7 +13,7 @@ public class ArticlePageObject extends MainPageObject{
         ADD_TO_MY_LIST_OVERLAY = "org.wikipedia:id/onboarding_button",
         MY_LIST_NAME_INPUT = "org.wikipedia:id/text_input",
         MY_LIST_OK_BUTTON = "//*[@text='OK']",
-        CLSOE_ARTICLE_BUTTON= "//android.widget.ImageButton[@content-desc='Navigate up']";
+        CLOSE_ARTICLE_BUTTON = "//android.widget.ImageButton[@content-desc='Navigate up']";
 
     public ArticlePageObject(AppiumDriver driver)
     {
@@ -77,10 +77,9 @@ public class ArticlePageObject extends MainPageObject{
     public void closeArticle()
     {
         this.waitForElementAndClick(
-                By.xpath(CLSOE_ARTICLE_BUTTON),
+                By.xpath(CLOSE_ARTICLE_BUTTON),
                 "can't find the 'X' button, cant close article",
                 5
         );
     }
-
 }

@@ -143,31 +143,16 @@ public class SearchingTests extends CoreTestCase {
 
     @Test
     public void testAmountOfNotEmptySearch() {
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "can't find search input",
-                5
-        );
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject.initSearchInput();
+        String search_line = "Linkin Park Discography";
+        SearchPageObject.typeSearchLine(search_line);
 
+        //old
         //org.wikipedia:id/search_results_list - локатор общего контейнера с результатами поиска
         //org.wikipedia:id/page_list_item_container - локатор элемента в общем контейнере
-        String search_phrase = "Linkin Park Discography";
-        mainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                search_phrase,
-                "can't find search input",
-                5
-        );
         // в данном случае /* спуск к дочернему элементу
-        String search_result_locator = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
-        mainPageObject.waitForElementPresent(
-                By.xpath(search_result_locator),
-                "can't find anything by the request " + search_phrase,
-                15
-        );
-        int amountOfSearchResults = mainPageObject.getAmountOfElement(
-                By.xpath(search_result_locator)
-        );
+        int amountOfSearchResults = SearchPageObject.getAmountOfPublicArticles();
         System.out.println(amountOfSearchResults);
         Assert.assertTrue(
                 "there are few search results",
@@ -177,34 +162,12 @@ public class SearchingTests extends CoreTestCase {
 
     @Test
     public void testAmountOfEmptySearch() {
-        mainPageObject.waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "can't find search input",
-                5
-        );
-
-        //org.wikipedia:id/search_results_list - локатор общего контейнера с результатами поиска
-        //org.wikipedia:id/page_list_item_container - локатор элемента в общем контейнере
-        String search_phrase = "iewrdo4384umoi";
-        mainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                search_phrase,
-                "can't find search input",
-                5
-        );
-        // в данном случае /* спуск к дочернему элементу
-        String search_result_locator = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
-        String empty_result_label = "//*[@text='No results found']";
-        mainPageObject.waitForElementPresent(
-                By.xpath(empty_result_label),
-                "cant find empty result label",
-                15
-        );
-        mainPageObject.assertElementNotPresent(
-                By.xpath(search_result_locator),
-                "we found some results by request " + search_phrase
-        );
-
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject.initSearchInput();
+        String search_line = "iewrdo4384umoi";
+        SearchPageObject.typeSearchLine(search_line);
+        SearchPageObject.waitForEmptyResultsLabel();
+        SearchPageObject.assertThereIsNoAnySearchResultHere();
     }
 
     @Test
