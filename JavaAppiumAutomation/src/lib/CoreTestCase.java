@@ -25,8 +25,7 @@ public class CoreTestCase extends TestCase {
         capabilities.setCapability("appActivity", ".main.MainActivity");
         capabilities.setCapability("app", "c:\\learning\\mobiletest\\JavaAppiumAutomation\\apks\\org.wikipedia.apk"); // full path to apk
         driver = new AndroidDriver(new URL(AppiumUrl), capabilities);
-        driver.rotate(ScreenOrientation.PORTRAIT);
-
+        this.rotateScreenPortrait();
     }
 
     @Override
@@ -34,5 +33,18 @@ public class CoreTestCase extends TestCase {
     {
         driver.quit();
         super.tearDown();  // method tearDown from junit
+    }
+
+    protected void rotateScreenPortrait()
+    {
+        driver.rotate(ScreenOrientation.PORTRAIT);
+    }
+    protected void rotateScreenLandscape()
+    {
+        driver.rotate(ScreenOrientation.LANDSCAPE);
+    }
+    protected void backgroundApp(int seconds)
+    {
+        driver.runAppInBackground(seconds);
     }
 }
