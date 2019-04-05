@@ -1,12 +1,11 @@
 import lib.CoreTestCase;
 import lib.ui.*;
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebElement;
 
-public class SearchingTests extends CoreTestCase {
+public class OldSearchingTests extends CoreTestCase {
      private MainPageObject mainPageObject;
      protected void setUp() throws Exception {
          super.setUp();
@@ -40,24 +39,6 @@ public class SearchingTests extends CoreTestCase {
         SearchPageObject.clickSearchCloseBtn();
         SearchPageObject.checkSearchCloseBtnNotPresent();
     }
-
-    @Test
-    public void testCompareArticleTitle() {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
-        SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.clickOnArticleWithSubstring("Object-oriented programming language");
-        SearchPageObject.findArticleTitle();
-        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
-        String article_title = ArticlePageObject.getArticleTitle();
-
-        Assert.assertEquals(
-                "unexpected title",
-                "Java (programming language)",
-                article_title
-        );
-    }
-
     @Test
     public void testSwipeArticle() {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
@@ -110,38 +91,6 @@ public class SearchingTests extends CoreTestCase {
     }
 
     @Test
-    public void testSaveFirstArticleToMyList() {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
-        SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.clickOnArticleWithSubstring("Object-oriented programming language");
-        SearchPageObject.findArticleTitle();
-        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
-        ArticlePageObject.waitForTitleElement();
-        String article_title = ArticlePageObject.getArticleTitle();
-        String name_of_folder = "Learning programming";
-        ArticlePageObject.addArticleToMyList(name_of_folder);
-        ArticlePageObject.closeArticle();
-        NavigationUI NavigationUI = new NavigationUI(driver);
-        NavigationUI.clickMyList();
-        MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
-        MyListsPageObject.openFolderByName(name_of_folder);
-        MyListsPageObject.swipeByArticleToDelete(article_title);
-    }
-
-    @Test
-    public void testSwipeToArticleElement() {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
-        SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Appium");
-        SearchPageObject.clickOnArticleWithSubstring("Appium");
-        ArticlePageObject ArticlePageObject = new ArticlePageObject (driver);
-        ArticlePageObject.waitForTitleElement();
-        ArticlePageObject.swipeToFooter();
-    }
-
-
-    @Test
     public void testAmountOfNotEmptySearch() {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
         SearchPageObject.initSearchInput();
@@ -154,7 +103,7 @@ public class SearchingTests extends CoreTestCase {
         // в данном случае /* спуск к дочернему элементу
         int amountOfSearchResults = SearchPageObject.getAmountOfPublicArticles();
         System.out.println(amountOfSearchResults);
-        Assert.assertTrue(
+        assertTrue(
                 "there are few search results",
                 amountOfSearchResults > 0
         );
@@ -179,46 +128,11 @@ public class SearchingTests extends CoreTestCase {
                 "can't find search input"
         );
 
-        Assert.assertTrue(element_to_init_search_line.isDisplayed());
+        assertTrue(element_to_init_search_line.isDisplayed());
     }
 
-    @Test
-    public void testChangeScreenOrientationOnSearchResults() {
-        String article_title = "Khinkali";
-        String search_line = "Khinkali";
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
-        SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine(search_line);
-        SearchPageObject.clickOnArticleWithSubstring(article_title);
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
-        String article_title_before_rotation = ArticlePageObject.getArticleTitle();
-        this.rotateScreenLandscape();
-        String article_title_after_rotation = ArticlePageObject.getArticleTitle();
-        Assert.assertEquals(
-                "title have been changed after screen rotation",
-                article_title_before_rotation,
-                article_title_after_rotation
-        );
-        this.rotateScreenPortrait();
-        String article_title_after_second_rotation = ArticlePageObject.getArticleTitle();
-        Assert.assertEquals(
-                "title have been changed after screen rotation",
-                article_title_before_rotation,
-                article_title_after_second_rotation
-        );
-    }
 
-    @Test
-    public void testCheckSearchArticleInBackground()
-    {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
-        SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
-        this.backgroundApp(2);
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
-    }
 
 }
